@@ -10,7 +10,11 @@ html, body{
     scroll-behavior: smooth;
     background-color: rgb(30,1,54);
 }
-
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%;
+    }
+  }
 .page1{
     width: 100%;
 }
@@ -61,7 +65,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 510px;
+    height: 550px;
 }
 
 .left{
@@ -109,9 +113,11 @@ img{
 }
 
 #bottom{
-    background-color: rgb(37, 1, 35);
+    background-color: rgb(30,1,54);
+    /*background-color: rgb(37, 1, 35);*/
     width: 100%;
-    height: 30px;
+    height: 40px;
+    padding: 5px 20px;
     display: flex;
 }
 
@@ -129,7 +135,7 @@ img{
     display: flex;
     position: fixed;
     margin-top: 0px;
-    margin-left: 95%;
+    margin-left: 94%;
     height: 25px;
     width: 25px;
 
@@ -146,7 +152,7 @@ img{
     height: 450px;
     width: 100%;
     display: flex;
-    background-color: rgb(71, 3, 66);
+    background-color: rgb(37, 1, 66);
 }
 
 #left1{
@@ -181,10 +187,10 @@ b{
 }
 
 #skills{
+    padding: 50px 0;
     height: 700px;
     width: 100%;
-    padding: 50px 0;
-    background-color: rgb(37, 1, 35);
+    background-color: rgb(24, 2, 44);
 }
 
 #skilspandiv{
@@ -211,9 +217,9 @@ b{
 }
 
 .skimg1{
-    margin: 0 53px;
-    height: 100px;
-    width: 90px;  
+    margin: 0 62px;
+    height: 80px;
+    width: 70px;  
     border-style: solid;
     border-color: #700606; 
 }
@@ -236,8 +242,8 @@ b{
 
 .skimg2{
     margin: 0 53px;
-    height: 100px;
-    width: 90px;  
+    height: 80px;
+    width: 70px;  
     border-style: solid;
     border-color: #700606; 
 }
@@ -254,8 +260,32 @@ b{
 #skill3{
     height: 190px;
     width: 100%;
+    display: flex;
     justify-content: space-between;
-    padding: 30px 510px;
+    padding: 30px 300px;
+}
+
+.hofdiv
+{
+    height: 90px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hofimg{
+    margin: 0 24px;
+    height: 80px;
+    width: 70px;  
+    border-style: solid;
+    border-color: #700606; 
+}
+
+.hofspan{
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: small;
+    font-weight: 600;
 }
 
 .skimg2{
@@ -267,21 +297,54 @@ b{
 }
 
 #projects{
-    height: 80px;
+    height: 240px;
     width: 100%;
+    padding: 40px 0;
 }
 
- h1{
-    margin-top: 40px;
-    margin-left: 60px;
-    color: #ffffff;
- }
+#projspan{
+    margin: 0px 45%;
+    padding: 0 10px;
+    color: white;
+    font-size: xx-large;
+    font-weight: 500;
+    background-color: rgb(65, 3, 62);
+}
+
+#projlist{
+    height: 190px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 460px;
+}
+
+.projdiv
+{
+    height: 90px;
+    width: 130px;
+    align-items: center;
+    justify-content: center;
+}
+
+.projimg{
+    margin: 0 25px;
+    height: 80px;
+    width: 70px;  
+    border-style: solid;
+    border-color: #700606; 
+}
+
+.projspan{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
 
  #contacts{
     height: 80px;
     width: 100%;
     justify-content: space-between;
-    padding: 30px 480px;
+    padding: 30px 482px;
 }
 
 .skimg2{
@@ -291,3 +354,8 @@ b{
     border-style: solid;
     border-color: #700606; 
 }
+
+
+
+
+
