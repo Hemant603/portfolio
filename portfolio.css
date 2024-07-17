@@ -10,8 +10,8 @@ html, body{
     scroll-behavior: smooth;
     background-color: rgb(30,1,54);
 }
-@media screen and (max-width: 800px) {
-    .left, .main, .right {
+@media (max-width: 800px) {
+    #page11{
       width: 100%;
     }
   }
@@ -39,9 +39,15 @@ html, body{
 }
 
 ul{
-    margin-left: 40%;
+    margin-left: 40vw;
     list-style: none;
     padding: 5px;
+}
+
+@media (max-width:800px;){
+    ul{
+        margin-left: 13%;
+    }
 }
 
 li{
@@ -100,7 +106,6 @@ p{
 }
 
 .right{
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +140,7 @@ img{
     display: flex;
     position: fixed;
     margin-top: 0px;
-    margin-left: 94%;
+    margin-left: 94vw;
     height: 25px;
     width: 25px;
 
@@ -237,7 +242,7 @@ b{
     height: 190px;
     width: 100%;
     justify-content: space-between;
-    padding: 30px 206px;
+    padding: 30px 100px;
 }
 
 .skimg2{
@@ -344,7 +349,7 @@ b{
     height: 80px;
     width: 100%;
     justify-content: space-between;
-    padding: 30px 482px;
+    padding: 30px 479px;
 }
 
 .skimg2{
