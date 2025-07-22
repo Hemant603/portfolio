@@ -148,4 +148,19 @@
     </div>
 
 </body>
+    <script>
+    function checkHashAndToggle() {
+        const toggleButton = document.getElementById('toggle');
+        if (window.location.hash === '#home') {
+            toggleButton.classList.add('hidden');
+        } else {
+            toggleButton.classList.remove('hidden');
+        }
+    }
+        
+    checkHashAndToggle();
+
+    window.addEventListener('hashchange', checkHashAndToggle);
+</script>
+
 </html>
