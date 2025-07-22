@@ -148,19 +148,26 @@
     </div>
 
 </body>
-    <script>
-    function checkHashAndToggle() {
-        const toggleButton = document.getElementById('toggle');
-        if (window.location.hash === '#home') {
-            toggleButton.classList.add('hidden');
-        } else {
-            toggleButton.classList.remove('hidden');
-        }
-    }
-        
-    checkHashAndToggle();
 
-    window.addEventListener('hashchange', checkHashAndToggle);
+    <script>
+    const homeSection = document.getElementById('home');
+    const toggleBtn = document.getElementById('toggle');
+
+    const observer = new IntersectionObserver(
+        ([entry]) => {
+            if (entry.isIntersecting) {
+                toggleBtn.classList.add('hidden');  // Hide when #home is visible
+            } else {
+                toggleBtn.classList.remove('hidden');  // Show otherwise
+            }
+        },
+        {
+            root: null,
+            threshold: 0.6  // Adjust visibility sensitivity
+        }
+    );
+
+    observer.observe(homeSection);
 </script>
 
 </html>
